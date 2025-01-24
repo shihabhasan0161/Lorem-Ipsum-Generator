@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum Generator</title>
+    <link rel="stylesheet" href="loremipsum.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem Ipsum Generator</h1>
+
+        <label for="language">Select Language:</label>
+        <select id="language">
+            <option value="english">English</option>
+            <option value="chinese">Chinese</option>
+            <option value="french">French</option>
+            <option value="hindi">Hindi</option>
+        </select>
+
+        <label for="wordCount">Number of Words:</label>
+        <input type="number" id="wordCount" placeholder="Enter number of words" min="1" />
+
+        <button onclick="generateText()">Generate</button>
+
+        <div class="output" id="output"></div>
+
+        <button class="copy-btn" onclick="copyText()">Copy</button>
+    </div>
+    <script src="loremipsum.js"></script>
+</body>
+</html>
